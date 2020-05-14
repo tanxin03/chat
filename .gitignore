@@ -1,0 +1,5 @@
+/chat/cloudfunctions/callback/node_modules
+/chat/cloudfunctions/echo/node_modules
+
+/chat/cloudfunctions/login/node_modules
+/chat/cloudfunctions/openapi/node_modules
