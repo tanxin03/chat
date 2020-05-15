@@ -20,7 +20,7 @@ Page({
 
       const templateId = result
 
-      console.warn('[云函数] [openapi] 获取订阅消息模板 调用成功：', templateId)
+      console.log('[云函数] [openapi] 获取订阅消息模板 调用成功：', templateId)
       this.setData({
         templateId,
       })
@@ -67,17 +67,17 @@ Page({
 
   sendSubscribeMessage(e) {
     this.setData({
-      subscribeMessageResult: '',
+      subscribeMessageResult: '12345',
     })
 
     wx.cloud.callFunction({
       name: 'openapi',
       data: {
         action: 'sendSubscribeMessage',
-        templateId: this.data.templateId,
+        templateId: this.data.templateId
       },
       success: res => {
-        console.warn('[云函数] [openapi] subscribeMessage.send 调用成功：', res)
+        console.log('[云函数] [openapi] subscribeMessage.send 调用成功：', res)
         wx.showModal({
           title: '发送成功',
           content: '请返回微信主界面查看',

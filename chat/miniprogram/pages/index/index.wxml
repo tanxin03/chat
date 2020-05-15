@@ -10,9 +10,6 @@
       style="background-image: url({{avatarUrl}})"
       size="default"
     ></button>
-    <view>
-      <text class="request-text">谭雪老婆是傻逼</text>
-    </view>
     <view class="userinfo-nickname-wrapper">
       <button class="userinfo-nickname" bindtap="onGetOpenid">点击获取 openid</button>
     </view>
@@ -23,20 +20,12 @@
       <text>即时通信 Demo</text>
     </navigator>
   </view>
-
-  <!-- 新建云函数    -->
-  <view class="uploader">
-    <navigator url="../addFunction/addFunction" open-type="navigate" class="uploader-text">
-      <text>快速新建云函数</text>
-    </navigator>
-  </view>
-
   <!-- 云调用 -->
-  <view class="uploader">
+  <!-- <view class="uploader">
     <navigator url="../openapi/openapi" open-type="navigate" class="uploader-text">
       <text>云调用</text>
     </navigator>
-  </view>
+  </view> -->
 
 
 </view>

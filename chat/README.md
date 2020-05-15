@@ -157,3 +157,10 @@
     })
   }
 </pre>
+<pre>
+  <!-- 新建云函数    -->
+  <view class="uploader">
+    <navigator url="../addFunction/addFunction" open-type="navigate" class="uploader-text">
+      <text>快速新建云函数</text>
+    </navigator>
+</pre>
